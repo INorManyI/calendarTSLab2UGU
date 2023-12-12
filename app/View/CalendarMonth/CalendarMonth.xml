@@ -1,0 +1,16 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <StackLayout>
+        <FlexboxLayout class="page-header">
+            <Button class="fas" text="&#xf133;" tap="{{ calendarGoToCurrentDate }}"/>
+        </FlexboxLayout>
+        <StackLayout class="page-main">
+            <FlexboxLayout class="dateChanger">
+                <Button class="fas monthChanger" text="&#xf177;" tap="{{ decrementMonth }}"/>
+                <Button class="datePicker" text="{{ dateSwitcherName }}" tap="{{ pickCalendarDate }}"/>
+                <Button class="fas monthChanger" text="&#xf178;" tap="{{ incrementMonth }}"/>
+            </FlexboxLayout>
+            <GridLayout id="calendar" columns="*, *, *, *, *, *, *" rows="*, *, *, *, *, *, *" />
+        </StackLayout>
+    </StackLayout>
+</Page>
+

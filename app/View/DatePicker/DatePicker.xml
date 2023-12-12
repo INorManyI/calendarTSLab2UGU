@@ -1,0 +1,9 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="onNavigatingTo">
+    <FlexboxLayout>
+        <DatePicker id="datePicker" year="{{ year }}" month="{{ month }}" day="{{ day }}" />
+        <FlexboxLayout class="Buttons">
+            <Button class="discardChanges" text="Отмена" tap="{{ gotoPreviousPage }}" />
+            <Button class="saveChanges" text="Готово" tap="{{ saveSelectedDate }}"/>
+        </FlexboxLayout>
+    </FlexboxLayout>
+</Page>

@@ -1,0 +1,33 @@
+Page > FlexboxLayout
+{
+    justify-content: center;
+    flex-flow: column nowrap;
+}
+
+FlexboxLayout .Buttons
+{
+    justify-content: center;
+    flex-flow: row nowrap;
+}
+
+FlexboxLayout .Buttons Button
+{
+    border-size: 1px;
+    font-size: 18px;
+    width: 25%;
+    border-style: solid;
+}
+
+FlexboxLayout .Buttons .saveChanges
+{
+    background-color: #2be712;
+    color: rgb(255, 255, 255);
+    border-color: #2be712;
+}
+
+FlexboxLayout .Buttons .discardChanges
+{
+    color: rgb(255, 255, 255);
+    border-color: #0019f3;
+    background-color: #0019f3;
+}
